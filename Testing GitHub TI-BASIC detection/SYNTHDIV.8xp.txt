@@ -1,0 +1,48 @@
+ClrHome
+Menu("HOW MANY DIGITS?","Fo|u[r]",A,"Fi|v[|e]",B,"Six",C)
+
+Lbl A
+Disp "COEFFICIENTS"
+Prompt A,B,C,E
+Disp "DIVISOR"
+Prompt D
+B+(A*D)->Z
+C+(Z*D)->Y
+E+(Y*D)->V
+Disp A,Z,Y
+Disp "REMAINDER"
+Disp V
+
+Stop
+
+Lbl B
+Disp "COEFFICIENTS"
+Prompt A,B,C,E,F
+Disp "DIVISOR"
+Prompt D
+B+(A*D)->Z
+C+(Z*D)->Y
+E+(Y*D)->X
+F+(X*D)->V
+Disp A,Z,Y,X
+Disp "REMAINDER"
+Disp V
+
+Stop
+
+
+Lbl C
+Disp "COEFFICIENTS"
+Prompt A,B,C,E,F,G
+Disp "DIVISOR"
+Prompt D
+B+(A*D)->Z
+C+(Z*D)->Y
+E+(Y*D)->X
+F+(X*D)->U
+G+(U*D)->V
+Disp A,Z,Y,X,U
+Disp "REMAINDER"
+Disp V
+
+Stop
